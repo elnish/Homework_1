@@ -1,13 +1,13 @@
 //Task1
-// var from = +prompt('Discounts are valid from', '');
-// var to = +prompt('Discounts are valid to', '');
-// var now = +prompt('Current time', '');
-//
-// if (((from < to) && (now >= from) && (now <= to)) || ((from > to) && (now >= from) || (now <= to))) {
-//   console.log('Discounts are valid');
-// } else {
-//   console.log("Discounts AREN'T valid, comeback from " + from + ' to ' + to );
-// }
+var from = +prompt('Discounts are valid from', '');
+var to = +prompt('Discounts are valid to', '');
+var now = +prompt('Current time', '');
+
+if (((from < to) && (now >= from) && (now <= to)) || ((from > to) && (now >= from) || (now <= to))) {
+  console.log('Discounts are valid');
+} else {
+  console.log("Discounts AREN'T valid, comeback from " + from + ' to ' + to );
+}
 
 
 //Task 2
@@ -104,7 +104,7 @@ var n = {
 };
 
 function getDoubled() {
-  return this.number * 2 *2;
+  return this.number * this.number * 2;
 }
 
 function getDoubledTrippled() {
@@ -119,7 +119,7 @@ console.log('9. DoubledTrippled = ' + n.trippled());
 
 
 //Task 10
-var arr = [2,10,5,-41,150, -13];
+var arr = [2, 10, 5, -41, 150, -13];
 function random() {
   return Math.random() - 0.5;
 }
@@ -133,7 +133,7 @@ function maxNumb(){
   let max = arr[0];
 
   for (let i = 0; i < arr.length; i++) {
-    if(arr[i] > max) {
+    if (arr[i] > max) {
      max = arr[i];
     }
   }
@@ -160,9 +160,9 @@ console.log('12. Sum = ' + sum());
 //Task 13
 function checkPalindrome(str) {
   this.str = str.toLowerCase();
-  return this.str === this.str.split("").reverse().join("");
+  return this.str === this.str.split('').reverse().join('');
 }
 
-console.log("13. " + checkPalindrome("Anna"));
-console.log("13. " + checkPalindrome("ono"));
-console.log("13. " + checkPalindrome("string"));
+console.log('13. ' + checkPalindrome('Anna'));
+console.log('13. ' + checkPalindrome('ono'));
+console.log('13. ' + checkPalindrome('string'));
